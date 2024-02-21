@@ -1,14 +1,27 @@
-@font-face {
-    font-family: 'Cinematografica';
-    src: url('https://github.com/paloma021/CinemaKaraoke/raw/main/Fonts/Skincake.ttf') format('truetype');
+/* Definición de estilos para la fuente Fredoka */
+.fredoka.header {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 596;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 98.2;
+  }
+
+  .bebas-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
+  
+  /* Estilos para el resto de tu página */
   body {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    background-color: #ff0000; 
+    background-color: #a00b0b; 
   }
   
   .container {
@@ -17,19 +30,35 @@
   }
   
   h1 {
-    font-family: 'Cinematografica', sans-serif;
-    font-size: 48px; 
+    font-family: 'Fredoka', sans-serif; /* Cambiado a la fuente Fredoka */
+    font-size: 85px; 
     margin-bottom: 10px;
     color: #ffffff; 
   }
   
   h2 {
-    font-family: 'Cinematografica'; /* Cambio de la fuente */
-    font-size: 36px; 
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 60px;
     margin-bottom: 30px;
-    color: #723333; 
-  }
-  
+    color: #000000;
+    position: relative; /* Para posicionar el cuadro rojo relativo a este elemento */
+    display: inline-block; /* Para permitir dimensionamiento */
+}
+
+h2::before {
+    content: ""; /* Crea un pseudo-elemento */
+    position: absolute; /* Posición absoluta para estar detrás del texto */
+    top: 0;
+    left: 0;
+    transform: translate(-7%, 0%);
+    width: 120%;
+    height: 100%;
+    background-color: #ff0000; /* Color de fondo rojo */
+    border: 5px solid #ffffff; /* Borde blanco */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total */
+    z-index: -1; /* Colocar detrás del contenido de h2 */
+}
+
   .buttons {
     display: flex;
     justify-content: center;
