@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenido a Karaoke Cinema</title>
-  <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wdth,wght@98.2,596&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
   <div class="container">
-    <h1>Bienvenido</h1>
-    <h2>CinemaKaraoke</h2>
+    <h1 class="fredoka.header">Bienvenido</h1>
+    <h2 class="bebas-regular">CinemaKaraoke</h2>
     <div class="buttons">
-      <button class="btn">Iniciar Sesión</button>
-      <button class="btn">Registrarse</button>
+      <button class="btn" onclick="window.location.href='inicio_sesion.html'">Iniciar Sesión</button>
+      <button class="btn" onclick="window.location.href='registro.html'" >Registrarse</button>
     </div>
   </div>
 </body>
