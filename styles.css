@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Cinematografica-Bold';
-    src: url('https://fontmeme.com/fonts/static/222897/cinematografica-font-preview.png') format('truetype');
+    font-family: 'Cinematografica';
+    src: url('https://github.com/paloma021/CinemaKaraoke/raw/main/Fonts/Skincake.ttf') format('truetype');
   }
   
-body {
+  body {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     margin: 0;
@@ -17,18 +17,19 @@ body {
   }
   
   h1 {
-    font-family: 'Cinematografica-Bold', sans-serif;
+    font-family: 'Cinematografica', sans-serif;
     font-size: 48px; 
     margin-bottom: 10px;
     color: #ffffff; 
   }
   
   h2 {
+    font-family: 'Cinematografica'; /* Cambio de la fuente */
     font-size: 36px; 
     margin-bottom: 30px;
-    color: #ff0000; 
+    color: #723333; 
   }
-
+  
   .buttons {
     display: flex;
     justify-content: center;
